@@ -125,8 +125,8 @@
           connectWith: ".col"
         });
         $("#apagar-carro-container").sortable({
-          receive: function(event) {
-            return $(event.srcElement).fadeOut("slow", function() {
+          receive: function(event, ui) {
+            return $(ui.item[0]).fadeOut("slow", function() {
               return $(this).remove();
             });
           }

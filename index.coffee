@@ -63,8 +63,8 @@ html ->
           connectWith: ".col"
 
         $("#apagar-carro-container").sortable
-          receive: (event) ->
-            $(event.srcElement).fadeOut "slow", ->
+          receive: (event, ui) ->
+            $(ui.item[0]).fadeOut "slow", ->
               $(this).remove()
 
         $(".col").sortable
