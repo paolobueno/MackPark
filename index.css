@@ -1,0 +1,94 @@
+body {
+  background-color: #eee;
+  font-family: Georgia, serif;
+}
+#field-wrapper {
+  position: relative;
+}
+#field-wrapper > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+h2 {
+  height: 30px;
+  margin: 0;
+  text-align: center;
+}
+ul {
+  min-width: 9em;
+  float: left;
+  list-style-type: none;
+  padding: 1em;
+  margin: 0.5em;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #ccc;
+  min-height: 274px;
+}
+ul.col {
+  padding-top: 46px;
+  border-color: transparent;
+}
+li {
+  height: 10em;
+  width: 8em;
+  margin: 1em auto;
+  padding: 0.5em;
+}
+.placeholder-cell {
+  background-color: #bbb;
+}
+.placeholder-cell span {
+  display: table-cell;
+  height: 10em;
+  width: 8em;
+  margin: auto;
+  vertical-align: middle;
+  text-align: center;
+  font-size: large;
+}
+.cell {
+  background-color: #f0f71e;
+}
+.cell dl {
+  font-size: small;
+}
+.cell dl dt {
+  font-weight: bold;
+  float: left;
+}
+.cell dl dd {
+  float: right;
+  text-align: right;
+}
+.cell dl dt,
+.cell dl dd {
+  margin: 0;
+  width: 50%;
+}
+.ui-sortable-placeholder {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #00f;
+  visibility: normal !important;
+}
+form {
+  position: fixed;
+  right: 2%;
+  width: 25%;
+}
+label {
+  display: block;
+  margin: 0.3em 0em;
+}
+label > span {
+  width: 49%;
+}
+label > input[type=text] {
+  float: right;
+  width: 49%;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0;
+}
